@@ -11,12 +11,12 @@ cask "token-fleet-switch" do
   end
 
   on_arm do
-    url "https://github.com/TokenFleet-AI/token-fleet-switch/releases/download/v#{version}/TokenFleet%20Switch_#{version}_aarch64.dmg"
-    sha256 "99dcf09c332cbcc49d8e42b1b2c831408c60d5e1bac73fd245f05e78e142becf"
+    url "https://github.com/TokenFleet-AI/token-fleet-switch/releases/download/v#{version}/TokenFleet.Switch_#{version}_aarch64.dmg"
+    sha256 "a2cf1ddf8affc54be37c3fda2ce31787004cb249577749e7675eb641b6720d08"
   end
 
   on_intel do
-    url "https://github.com/TokenFleet-AI/token-fleet-switch/releases/download/v#{version}/TokenFleet%20Switch_#{version}_x64.dmg"
+    url "https://github.com/TokenFleet-AI/token-fleet-switch/releases/download/v#{version}/TokenFleet.Switch_#{version}_x64.dmg"
     sha256 "TODO_FILL_AFTER_RELEASE"
   end
 
