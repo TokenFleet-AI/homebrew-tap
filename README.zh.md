@@ -11,6 +11,7 @@ brew tap TokenFleet-AI/tap
 
 # CLI 工具
 brew install tokenless
+brew install rtk
 
 # 桌面应用
 brew install --cask token-fleet-switch
@@ -22,7 +23,8 @@ brew install --cask token-fleet-switch
 
 | 包名 | 说明 | 最新版本 |
 |------|------|---------|
-| `tokenless` | LLM Token 优化工具 — Schema/响应压缩、命令重写 | 1.0.0 |
+| `tokenless` | LLM Token 优化工具 — Schema/响应压缩、命令重写 | 1.2.0 |
+| `rtk` | 命令行代理工具，在常见开发命令上降低 60-90% 的 LLM Token 消耗 | 0.42.4 |
 
 ### Casks（桌面应用）
 
@@ -43,6 +45,17 @@ tokenless --help
 
 支持平台：macOS (arm64, x86_64)、Linux (x86_64)
 
+### `rtk`
+
+命令行代理工具，透明地在常见开发命令上降低 60-90% 的 LLM Token 消耗。单一 Rust 二进制，零依赖。
+
+```bash
+brew install rtk
+rtk --help
+```
+
+支持平台：macOS (arm64, x86_64)、Linux (arm64, x86_64)
+
 ### `token-fleet-switch`
 
 桌面应用，用于管理 AI API 网关的渠道、模型和厂商，支持实时费用监控和渠道智能切换。
@@ -60,6 +73,7 @@ brew install --cask token-fleet-switch
 ```bash
 brew update
 brew upgrade tokenless
+brew upgrade rtk
 brew upgrade --cask token-fleet-switch
 ```
 

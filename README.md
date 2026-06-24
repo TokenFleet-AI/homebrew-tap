@@ -9,8 +9,9 @@ Homebrew formulae and casks for [TokenFleet-AI](https://github.com/TokenFleet-AI
 ```bash
 brew tap TokenFleet-AI/tap
 
-# CLI tool
+# CLI tools
 brew install tokenless
+brew install rtk
 
 # Desktop app
 brew install --cask token-fleet-switch
@@ -22,7 +23,8 @@ brew install --cask token-fleet-switch
 
 | Package | Description | Latest |
 |---------|-------------|--------|
-| `tokenless` | LLM token optimization toolkit — schema/response compression, command rewriting | 1.0.0 |
+| `tokenless` | LLM token optimization toolkit — schema/response compression, command rewriting | 1.2.0 |
+| `rtk` | CLI proxy that reduces LLM token consumption by 60-90% on common dev commands | 0.42.4 |
 
 ### Casks (Desktop Apps)
 
@@ -43,6 +45,17 @@ tokenless --help
 
 Supports: macOS (arm64, x86_64), Linux (x86_64)
 
+### `rtk`
+
+CLI proxy that transparently reduces LLM token consumption by 60-90% on common dev commands. A single Rust binary with zero dependencies.
+
+```bash
+brew install rtk
+rtk --help
+```
+
+Supports: macOS (arm64, x86_64), Linux (arm64, x86_64)
+
 ### `token-fleet-switch`
 
 Desktop application for managing AI API gateway channels, models, and providers with real-time cost monitoring.
@@ -60,6 +73,7 @@ Packages auto-update via `brew upgrade`:
 ```bash
 brew update
 brew upgrade tokenless
+brew upgrade rtk
 brew upgrade --cask token-fleet-switch
 ```
 
